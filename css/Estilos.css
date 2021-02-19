@@ -1,0 +1,838 @@
+*{
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.global{
+	font-family: sans-serif;
+    text-align: center;
+}
+
+.menu-principal{
+   /* background: black; [Negro Clásico]*/ 
+   background: linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ [Negro Degradado]*/
+   /*background: linear-gradient(to right, #2c3e50, #3498db); /* W3C, IE 10+/* Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ [Azul Degradado]*/
+    padding-top: 10px;
+}
+
+.menu-options{
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+.menu-options li{
+	display: inline-flex;
+}
+
+#Contenedor-logo{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#logo-hercloset{
+	width: 25%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.Formulario{
+	padding: 20px;
+}
+
+form label{
+	display: block;
+}
+
+
+#SubTittle{
+	background-color: pink;
+	color: black;
+}
+
+.menu-options li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.menu-options li a:hover{
+	color: pink;
+	background-size: 100% 3px;
+}
+
+.Content-center{
+	background-size: cover;
+	text-align: center;
+}
+
+.Content-center .img-fondo{
+	width: 100%;
+}
+
+.Content-center-2{
+	text-align: center;
+}
+
+
+.info{
+	font-size: 1.3em;
+	padding: 1.3em;
+}
+
+#barra-busqueda{
+    color: black;
+	background: #fff;
+    text-align: center;
+	font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 100px;
+    width: 40%;
+    height: 25px;
+    overflow: hidden;
+}
+
+main form{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+main .categorias{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+main .categorias a{
+	color: gray;
+	margin: 10px 20px;;
+	font-size: 1.1em;
+    font-weight: bold;
+	text-decoration: none;
+	transition: 0.8s ease all;
+}
+
+main .categorias a:hover{
+	color: black;
+	
+}
+
+main .categorias a.activo{
+	color: #000;
+}
+
+
+/* -----------------------*/
+/* ------- PRODUCTOS ----------*/
+/* -----------------------*/
+.producto{
+    display: flex;
+    padding-top: 30px;
+}
+
+/*
+.img-producto, .producto-descripcion{
+    float: left;
+}*/
+
+.img-producto{
+    width: 50%;
+    
+}
+
+.producto-descripcion{
+    width: 30%;
+    height: auto;
+}
+.producto img{
+    width: 40%;
+    border-radius: 5px;
+}
+
+.related-products h2{
+    padding: 20px;
+}
+
+.cat-product-related{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cat-related a{
+    text-decoration: none;
+}
+
+.cat-related a:hover{
+    color: red;
+    
+}
+
+.cat-related img{
+    /*Hallar una forma de utilizar solo flexbox, más no float*/
+    width: 70%;
+}
+
+/* -----------------------*/
+/* ------- GRID ----------*/
+/* -----------------------*/
+
+.grid{
+	position: relative;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.img-charging{
+	opacity: 1;
+}
+
+.grid .item{
+	position: absolute;
+	text-align: center;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.33% - 20px);
+}
+
+.grid .item-contenido{
+	position: relative;
+}
+
+.grid .item img{
+	width: 70%;
+	border-radius: 30px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.grid .descripcion{
+	width: 70%;
+	display: inline-block;
+	align-content: center;
+	justify-content: center;
+	/*background: black;*/
+	/*background: linear-gradient(-5deg, black, transparent);*/
+	background: linear-gradient(transparent 30%, black 50%);
+	/*background: linear-gradient(transparent 50%, black 50%);*/
+	color: white;
+	padding-top: 40px;
+	border-radius: 30px;
+	position: relative;
+	bottom: 50px;
+	cursor: pointer;
+}
+
+.grid .descripcion h2{
+	font-size: 110%;
+}
+
+.grid .descripcion p{
+	font-size: 85%;
+}
+
+/* -----------------------*/
+/* ------- LOGIN ---------*/
+/* -----------------------*/
+.overlay{
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.lose-password{
+    padding-top: 20px;
+}
+
+.lose-password a{
+    color: #312D2D;
+    font-weight:;
+    text-decoration: none;
+    transition: 1.2s ease all;
+}
+
+.lose-password a:hover{
+    color: #155FCF;
+}
+
+.registrarse{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+#btn-registrer{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+#btn-registrer:hover{
+    background: #155FCF;
+    transition: 1s ease all;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255,.8);
+    border-radius: 10px;
+}
+
+.overlay.active{
+	visibility: visible;
+}
+
+.popup{
+	background: #f8f8f8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	transition: 1s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.popup .btn-cerrar-popup{
+	font-size: 18px;
+	line-height: 16px;
+	display: block;
+	text-align: left;
+	color: #000;
+	transition: .5s ease all;
+	
+}
+
+.popup .btn-cerrar-popup:hover{
+	color: red;
+}
+
+.popup h1{
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs{
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input{
+	width: 55%;
+	margin-bottom: 20px;
+	height: 30px;
+	line-height: 55px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: black;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 1s ease all;
+	opacity: 0;
+}
+
+.popup form .btn-submit:hover{
+	background: rgba(255,135,15, .9);
+    text-shadow: 
+}
+
+.popup.active{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.popup.active h1{
+	animation: EntradaTitulo .9s ease .5s forwards;
+}
+
+.popup.active .contenedor-inputs{
+	animation: EntradaInputs 1s ease 1s forwards;
+}
+
+.popup.active form .btn-submit{
+	animation: EntradaButton .9s ease 1.5s forwards;
+}
+
+@Keyframes EntradaTitulo{
+	from{
+		transform: translateY(-25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@Keyframes EntradaInputs{
+	from{
+		transform: translateX(-25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@Keyframes EntradaButton{
+	from{
+		transform: translateY(25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+/* -----------------------*/
+/* ------- CONTACTO ---------*/
+/* -----------------------*/
+
+.body-contact{
+    background: #fff;
+}
+
+.Content-contact{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.Content-contact h1{
+	color: black;
+	font-size: 34px;
+	font-weight: bold;
+	margin: 0;
+    text-align: center;
+    padding: 25px;
+}
+
+.Content-contact spam{
+	color: rgb(210,28,23);
+}
+
+.contact-wrapper{
+   /* box-shadow: 0 0 20px 0 rgba(0, 240, 44, .5);*/
+}
+
+.contact-wrapper > *{
+    padding: 1em;
+}
+
+
+.contact-form {
+    background: #222222;
+    color: white;
+}
+
+.contact-form form{
+    padding: 1em;
+    margin: 0;
+}
+
+.Content-contact .contact-form form button,
+.Content-contact .contact-form form input,
+.Content-contact .contact-form form textarea{
+	width: 90%;
+	border: none;
+    padding: .4em;
+	background: none;
+    color: #fff;
+	border-bottom: 1px solid #d63031;
+}
+
+
+.Content-contact .contact-form form  label{
+    padding-top: .9em;
+}
+
+.Content-contact .contact-form form button{
+    background: #b70e21;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.7em;
+}
+
+.Content-contact .contact-form form button:hover,
+.Content-contact .contact-form form button:focus{
+    background: #d63031;
+    color: #fff;
+    transition: background-color 0.9s ease-out;
+    outline: 0;
+}
+
+.Content-contact .contact-info h4,
+.Content-contact .contact-info ul,
+.Content-contact .contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.Content-contact .contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.Content-contact .contact-info ul li{
+    padding: .3em;
+}
+
+.Content-contact .contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Content-contact .contact-form form .block{
+    grid-column: 1/3;
+}
+
+.Content-contact form .btn-submit:hover{
+	background: rgba(219,44,34, .9);
+}
+
+.contact-info{
+	width: 90%;
+	background: black;
+	color: white;
+}
+
+/*
+.popup-2.active h1{
+	animation: EntradaTitulo-2 .9s ease .5s forwards;
+}
+
+.popup-2.active .contact-form{
+	animation: EntradaInputs-2 1s ease 1s forwards;
+}
+
+.popup-2.active form .btn-submit{
+	animation: EntradaButton-2 .9s ease 1.5s forwards;
+}
+
+@Keyframes EntradaTitulo-2{
+	from{
+		transform: translateY(-25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@Keyframes EntradaInputs-2{
+	from{
+		transform: translateX(-25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@Keyframes EntradaButton-2{
+	from{
+		transform: translateY(25px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+*/
+
+/* -----------------------*/
+/* ------- FOOTER ---------*/
+/* -----------------------*/
+
+footer{
+	width: 100%;
+	background-color: black;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor-footers{
+    font-size: 0.9em;
+	width: 100%;
+	max-width: 1440px;
+    display: flex;
+	justify-content: space-between;
+}
+
+footer h1{
+    font-size: 16px;
+    color: skyblue;
+    margin: 10px;
+    display: inline-flex;
+}
+
+footer p{
+	color: white;
+	margin: 10px;
+	font-size: 1em;
+	display: inline-flex;
+}
+
+footer a{
+	color: white;
+	margin: 16px;
+	font-size: 1em;
+	display: inline-flex;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+footer a:hover, a:focus{
+	background-size: 100% 2px;
+}
+
+.images{
+	width: 10%;
+	height: auto;
+	cursor: pointer;
+}
+
+.images-2{
+	width: 30px;
+	height: auto;
+	cursor: pointer;
+}
+
+.content-footer-2{
+    max-width: 400px;
+}
+
+.content-footer-3{
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-footer-3 p{
+    color: darkgray;
+}
+
+.content-footer-4{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-footer-pri{
+	width: 100%;
+    max-width: 540px;
+}
+
+/* LARGE SCREEN*/
+@media screen and (min-width: 700px){
+    .contact-wrapper{
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .4);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+}
+
+/* SMALL SCREEN*/
+@media screen and (max-width: 800px){
+    #barra-busqueda{
+        width: 380px;
+        overflow: hidden;
+    }
+    
+    .contenedor-footers{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .content-footer-4{
+        display: inline-flex;
+    }
+    
+    .menu-options li{
+	display: inline-flex;
+    font-size: 0.95em;
+    }
+    
+    #SubTittle{
+        font-size: 0.90em;
+    }
+	
+    .info{
+        font-size: 1em;
+    }
+	
+	.grid .item img{
+	width: 80%;
+	border-radius: 10px;
+	cursor: pointer;
+	vertical-align: top;
+	}
+
+	.grid .descripcion{
+		width: 80%;
+		background: linear-gradient(transparent 30%, black 50%);
+		/*background: linear-gradient(transparent 50%, black 50%);*/
+		color: white;
+		padding-top: 35px;
+		border-radius: 20px;
+		position: relative;
+		bottom: 35px;
+		cursor: pointer;
+	}
+
+	.grid .descripcion h2{
+		font-size: 100%;
+	}
+
+	.grid .descripcion p{
+		font-size: 70%;
+	}
+	
+/* -----------------------*/
+/* ------- LOGIN ----------*/
+/* -----------------------*/
+.overlay{
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.overlay.active{
+	visibility: visible;
+}
+
+.popup{
+	/*background: #f8f8f8;*/
+	/*Rosa degradado*/
+	/*background: linear-gradient(#eaafc8 20%, #654ea3 90%);*/
+	/*Beige degradado*/
+	background: linear-gradient(#6190E8 50%, #FFFFFF 80%);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	width: 400px;
+	height: 200px;
+	transition: 1s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup{
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	color: #000;
+	transition: .5s ease all;
+	
+}
+
+.popup .btn-cerrar-popup:hover{
+	color: red;
+}
+
+.popup h1{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs{
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input{
+	width: 50%;
+	margin-bottom: 20px;
+	height: 20px;
+	line-height: 55px;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit{
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	color: #fff;
+	background: black;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	opacity: 0;
+}
+
+}

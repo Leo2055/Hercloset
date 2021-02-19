@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Etiquetas META -->
+	<meta charset="UTF-8">
+	<!--Para el Motor de busqueda-->
+	<meta name="description" content="Tienda On-line de ropa para mujer - HERCLOSET">
+	<meta name="keywords" content="Mujeres, Vestidos, Barata">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<meta name="distribution" content="global">
+	<!-- Al lanzar la pagina oficial, colocar "index"-->
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/Estilos.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://fontawesome.com/v3.2.1/icon/remove">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link href = "https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel = "stylesheet">
+	<title>HerCloset</title>
+</head>
+<body>
+	<div class="global">
+		<header>
+			<div class="menu-principal">
+			    <div id="Contenedor-logo">
+			        <a href="index.php"><img id="logo-hercloset" src="img/Logo_Hercloset.jpeg" alt="HerCloset"></a>
+                </div>
+                <nav>
+					<ul class="menu-options">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="Contacto.html" class="btn-abrir-popup-2" id="btn-abrir-popup-2">Contactos</a></li>
+						<li><a href="#">Ubicación</a></li>
+						<li><a href="#" class="btn-abrir-popup" id="btn-abrir-popup">Iniciar sesión</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Ventana PopUp del Login -->
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+                <div class="content-login">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa fa-window-close" aria-hidden="true"></i></a> 
+                    <h1>LOGIN</h1>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="text" placeholder="Nombre de Usuario" required>
+                            <input type="password" placeholder="Contraseña" required>
+                        </div>
+                        <input type="submit" class="btn-submit" value="Ingresar">
+                    </form>
+                    <div class="lose-password">
+                        <a href="#" id="lose-password"> Olvide mi contraseña</a>
+                    </div>
+                </div>
+                <div class="registrarse">
+			        <p>Registrate ya para comenzar a comprar</p>
+			        <br>
+			        <a href="#" id="btn-registrer">Registrarme</a>
+                </div>
+			</div>
+		</div>
+		<div class="contenedor-Sub">
+			<h3 id="SubTittle">Tienda On-line de ropa para mujeres</h3>
+		</div>
+		<div class="Content-center">
+			<img src="img/fondo-hercloset.jpeg" alt="" class="img-fondo">
+		</div>
+		<main class="Content-center-2">
+			<div class="info">
+				<p>Blusas, Vestidos, Enterizos, y mucho más ... encuéntralos aquí en <b>HerCloset</b></p>
+			</div>
+			<form action="" >
+				<input type="text" name="Buscar" id="barra-busqueda" placeholder="Buscar" autocomplete="off" autofocus="autofocus" required>
+			</form>
+				<div class="categorias" id="categorias">
+					<a href="#" class="activo">Todos</a>
+					<a href="#">Vestidos</a>
+					<a href="#">Blusas</a>
+					<a href="#">Crop Top's</a>
+					<a href="#">Faldas</a>
+				</div>
+		</main>
+		<section class="grid" id="grid">
+			<div class="item" 
+			data-categoria="Blusas blusas" 
+			data-etiquetas="Blusas blusas Sencillas sencillas">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa1.jpeg" alt="">
+					<a href=""></a>
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+			data-categoria="vestidos" 
+			data-etiquetas="vestido cruzado">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa2.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Vestido</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+			data-categoria="blusas" 
+			data-etiquetas="blusas">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa3.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+			data-categoria="faldas" 
+			data-etiquetas="faldas bandas">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa4.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+				data-categoria="faldas" 
+				data-etiquetas="faldas sencillo">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa5.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+			data-categoria="faldas" 
+			data-etiquetas="falda sencilla">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa6.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+			<div class="item"
+			data-categoria="blusas" 
+			data-etiquetas="blusas rosadas sencillas">
+				<div class="item-contenido">
+					<img src="img/Img-nuevos/Ropa7.jpeg" alt="">
+					<div class="descripcion">
+						<h2>Blusa</h2>
+						<p><b>Precio:</b> 3,50</p>
+					</div>
+				</div>
+			</div>
+		</section>
+			<footer>
+				<div class="contenedor-footers">
+					<div class="content-footer-2">
+					    <h1>Información Relevante</h1>
+						<ul>
+							<li><a href="#">Promociones Vigentes</a></li>
+							<li><a href="#">Preguntas Frecuentes</a></li>
+							<li><p>© 2020 HerCloset</p></li>
+						</ul>
+					</div>
+					<div class="content-footer-pri">
+						<h1> Métodos de pago</h1>
+						<div class="content-footer-3">
+							<img src="img/transferencia-bancaria.png" alt="Transferencia Bancaria" class="images">
+							<p>Transferencia Bancaria</p>
+							<img src="img/tarjeta-de-credito.png" alt="Tarjeta de Credito" class="images">	
+							<p> Tarjeta de Crédito o Débito</p>
+							<img src="img/deposito.png" alt="Deposito Bancario" class="images">
+							<p> Deposito Bancario</p>
+						</div>
+					</div>
+					<div class="content-footer">
+						<h1>Síguenos en:</h1>
+						<br>
+							<div class="content-footer-4">
+								<img src="img/facebook.png" alt="Facebook" class="images-2"> 
+								<p><a href="#">Facebook</a></p>
+							</div>
+							<div class="content-footer-4">
+								<img src="img/instagram.png" alt="Instagram" class="images-2">
+								<p><a href="#">Instagram</a></p>
+							</div>
+							<div class="content-footer-4">
+							 <img src="img/whatsapp.png" alt="WhatsApp" class="images-2">
+							<p><a href="#">WhatsApp</a></p> 
+						</div>
+					</div>
+				</div>
+			</footer>
+	</div>
+	<script src="js/popup.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
